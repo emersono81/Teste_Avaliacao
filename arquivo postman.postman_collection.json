@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "ed7d0e2c-8975-4e7b-8585-02e3f5e5c773",
+		"name": "arquivo postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/company/employees/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"João\",\n    \"cpf\": \"99999999999\",\n    \"endereco\": \"Avenida Paulista\",\n    \"dataNascimento\": \"2000-02-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/company/employees/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"employees",
+						""
+					]
+				},
+				"description": "Teste do POST para Avaliação ZUP"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/company/employees/49",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/company/employees/49",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"employees",
+						"49"
+					]
+				},
+				"description": "Get Postman Avaliação ZUP"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/company/employees/50",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Jose\",\n    \"cpf\": \"88888888888\",\n    \"endereco\": \"Av da Consolação\",\n    \"dataNascimento\": \"1995-02-01\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/company/employees/50",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"employees",
+						"50"
+					]
+				},
+				"description": "PUT Postman - Avaliação ZUP"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/company/employees/50",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/company/employees/50",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"employees",
+						"50"
+					]
+				},
+				"description": "DELETE Postman - Avalização ZUP"
+			},
+			"response": []
+		}
+	]
+}
